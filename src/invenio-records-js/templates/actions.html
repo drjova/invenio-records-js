@@ -2,8 +2,8 @@
     <div ng-show="recordsVM.invenioRecordsEndpoints.self">
       <ul class="list-inline text-right">
         <li><button ng-disabled="depositionForm.$invalid || depositionForm.$prestine || recordsVM.invenioRecordsLoading" class="btn btn-default" ng-click="recordsVM.actionHandler('self', 'PUT')">Save</button></li>
-        <li><button ng-disabled="depositionForm.$invalid || depositionForm.$dirty || recordsVM.invenioRecordsLoading" class="btn btn-success" ng-click="recordsVM.actionHandler('publish', 'POST')">Publish</button></li>
-        <li><button ng-disabled="recordsVM.invenioRecordsLoading" ng-hide="!recordsVM.invenioRecordsEndpoints.discard" class="btn btn-danger" ng-click="recordsVM.actionHandler('discard', 'PUT')">Discard</button></li>
+        <li><button ng-disabled="depositionForm.$invalid || depositionForm.$dirty || recordsVM.invenioRecordsLoading" class="btn btn-success" ng-click="recordsVM.actionHandler('publish', 'POST', 'html')">Publish</button></li>
+        <li><button ng-disabled="recordsVM.invenioRecordsLoading" ng-hide="!recordsVM.invenioRecordsEndpoints.discard" class="btn btn-danger" ng-click="recordsVM.actionHandler('discard', 'PUT', 'html')">Discard</button></li>
       </ul>
     </div>
 
